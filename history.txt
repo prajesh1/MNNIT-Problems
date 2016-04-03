@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Joaquino Dental</title>
+  <link  href="{{ url_for('static', filename='css/jquery-ui.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+  <link  href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" />
+  <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.accordion.js')}}"></script>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+ 
+  $(function() {
+    $( "#datepicker" ).datepicker({
+		 showOtherMonths: true,
+      selectOtherMonths: true,
+    });
+  });
+  </script>
+</head>
+<body>
+
+<div id="top">
+<div id="bar">
+</div>
+<div id="nav">
+	<div id="logo">
+	<a href="#"><img src= "{{ url_for('static', filename='images/logo_02.gif') }}" alt="logo" > </a>
+	</div>
+    
+    
+    
+    
+    
+    
+    <div class="container-fluid  visible-xs visible-sm">
+         <div class="row">
+            <div class="mobile-nav">
+             <section id="single" data-accordion>
+               <div data-control><img src="{{ url_for('static', filename='images/navbar-collapse.gif') }}" height="80px;"></div>
+            <li class="dropdown-header">Dropdown header</li>
+          </section>
+       </div>
+         </div>
+      </div>
+      
+      
+      
+   <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Account</a></li>
+  <li role="presentation"><a href="#">Company</a></li>
+   <li role="presentation"><a href="#">Contact Us</a></li>
+</ul> 
+</div>
+
+</div>
+
+<div id="main">
+<div class="label"><span><p>
+ Appointment History</p><div id="name"><a href="#">Hi, Mike Simith</a></div>
+</div>
+
+
+<div class="middle">
+<table class="table">
+<tr><th>Date</th><th>Time</th><th>Treatment</th><th>Dentist</th></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+
+
+</table>
+ 
+</div>
+
+<button type="button" class="btn btn-confirm btn-lg">back <<  </button>
+
+</div>
+
+<div id="footer">©Developed by Team 14</div>
+</body>
+</html>
