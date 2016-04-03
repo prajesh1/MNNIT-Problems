@@ -3,57 +3,62 @@
 <head>
   <meta charset="utf-8">
   <title>Joaquino Dental</title>
-  <link  href="{{ url_for('static', filename='css/jquery-ui.min.css')}}" rel="stylesheet" type="text/css">
-  <link href="{{ url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
-  <link  href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" />
-  <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.accordion.js')}}"></script>
+  <link  href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link  href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+ <script src="js/dropdown.js"></script>
+<script src="js/font-size.js"></script>
  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script>
- 
-  $(function() {
-    $( "#datepicker" ).datepicker({
-		 showOtherMonths: true,
-      selectOtherMonths: true,
-    });
-  });
-  </script>
 </head>
 <body>
+
 
 <div id="top">
 <div id="bar">
 </div>
 <div id="nav">
 	<div id="logo">
-	<a href="#"><img src= "{{ url_for('static', filename='images/logo_02.gif') }}" alt="logo" > </a>
+	<a href="#"><img src= "images/logo_02.gif" alt="logo" > </a>
 	</div>
     
     
     
     
-    
+    <!--mobile nav-->
     
     <div class="container-fluid  visible-xs visible-sm">
          <div class="row">
             <div class="mobile-nav">
-             <section id="single" data-accordion>
-               <div data-control><img src="{{ url_for('static', filename='images/navbar-collapse.gif') }}" height="80px;"></div>
-            <li class="dropdown-header">Dropdown header</li>
-          </section>
+             <div class="dropdown">
+  <button id="dropdown-toggle-sm" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right">
+    <li><a href="#">Home</a></li>
+ 
+    <li><a href="#">Account</a></li>
+    
+    <li><a href="#">Company</a></li>
+   
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
        </div>
          </div>
       </div>
       
-      
-      
+      <!--end-->
+  <div class="container-fluid visible-lg visible-md">   
    <ul class="nav nav-pills">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Account</a></li>
   <li role="presentation"><a href="#">Company</a></li>
    <li role="presentation"><a href="#">Contact Us</a></li>
 </ul> 
+</div>
+
+
 </div>
 
 </div>
@@ -67,12 +72,16 @@
 <div class="middle">
 <table class="table">
 <tr><th>Date</th><th>Time</th><th>Treatment</th><th>Dentist</th></tr>
+
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
 <tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+<tr><td>Date</td><td>Time</td><td>Treatment</td><td>Dentist</td></tr>
+
 
 
 </table>
